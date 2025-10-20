@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bell MT";    
+}
+html{
+    scroll-behavior: smooth;
+}
+#section1{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #EBCA9B;
+    height: 620px;
+}
+header{
+    background-color: #EBCA9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    left: 0;
+    top: 0;
+
+
+}
+#menuWrapper{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#imgContainer{
+    width: 50px;
+    height:50px;
+    background-image: url("images/Logo.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+}
+img{
+    width: 100%;
+}
+#sectionsType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sections{
+    margin: 30px;
+    font-size: 20px;
+}
+
+#hero{
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+#heroWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#welcomeText{
+    width: 50%;
+}
+#title p{
+    font-size: 96px;
+    margin-bottom: 30px;
+    line-height: 80px;
+}
+#subTitle p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#illustration{
+    background-image: url("images/neils5.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    align-self: flex-end;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    
+}
+#ContactUs{
+    background-color: #906D3C;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+
+}
+#ContactUs:hover{
+    background-color: #aa7d3f;
+    cursor: pointer;
+}
+#ContactUs a{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+}
+#section2{
+    height: 600px;
+    padding: 20px;
+}
+#section2Intro{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Sect2IntroTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #EBCA9B;
+}
+#Sect2IntroSubtitleTitle{
+    font-size: 20px;
+}
+#services{
+    display: flex;
+    justify-content: center;
+}
+.service{
+    display: flex;  
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.327) 0 0 5px;
+}
+
+#makeup{
+    background-image: url("images/makeup.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+#hairstyle{
+    background-image: url("images/hair.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(60px);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+#manicure{
+    background-image: url("images/neils3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(70px);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+#makeup.show, #hairstyle.show, #manicure.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.service p{
+    font-size: 30px;
+    align-self: flex-end;
+    margin: 10px;
+    font-weight: bold;
+    color: white
+}
+#section3{
+    background-color: #906D3C;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ContactUs2{
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+#ContactUs2:hover{
+    background-color: #eeeae5;
+    cursor: pointer;
+}
+#ContactUs2 a{
+    font-weight: bold;
+    font-size: 20px;
+    color: #906D3C;
+}
+#optionsOpen{
+    width: 50px;
+    height: 50px;
+    background-image: url("images/menu.jpg");
+    background-size: cover;
+    display: none;
+}
+#optionsClose{
+    width: 50px;
+    height: 50px;
+    background-image: url("images/close.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+#menuSlider{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.184);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    left: -60%;
+    transition: right 1000ms ease-out;
+}
+#menuSlider ul li{
+    font-size: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+@media (max-width: 1000px){
+    #title p{
+        font-size: 70px;
+        line-height: 80%;
+    }
+    #subTitle p{
+        font-size: 25px;
+    }
+    #illustration{
+        width: 250px;
+    }
+}
+@media (max-width: 570px){
+    #title p{
+        font-size: 70px;
+        line-height: 80%;
+        text-align: center;
+    }
+    #subTitle p{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #heroWrapper{
+        display: flex;
+        flex-direction: column;        
+
+    }
+    #illustration{
+        align-self: center;
+        margin-top: 20px;
+    }
+    #section1{
+        height: 800px;
+    }
+    #welcomeText{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #optionsOpen{
+        display: flex;
+    }
+    .sections{
+        display: none;
+    }
+    #services{
+        flex-direction: column;
+        align-items: center;
+    }
+    #section2{
+        height: auto;
+    }
+
+}
+
